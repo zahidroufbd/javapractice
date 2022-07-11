@@ -55,7 +55,12 @@ public class ResultSheet
  System.out.println(".......................................");
  System.out.println("Total Marks:"+"                "+ sum);
  System.out.println("Average Marks:"+"              "+ point);
- if(point>=80) {
+ if( Bengali <33 || English <33 || Mathematics <33 || Religion <33 || 
+ GenSci <33 || IntroToBus <33 || Accounting <33 || BusEntres<33 )
+ {
+     grade = "F";
+ }
+ else if(point>=80) {
  grade = "A+";
  }
  else if(point>=70) {
